@@ -1,0 +1,117 @@
+/* Login.css */
+  
+.login-box {
+    max-width: 400px;
+    margin: 150px auto 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+  
+.input-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+    /* Placeholder text color with 25% opacity */
+}
+
+button {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+/* Styles for the "Forgot Password?" link */
+.login-box .forgot-password {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .login-box .forgot-password a {
+    color: #008080;
+    text-decoration: none;
+  }
+  
+  .login-box .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styles for the "New User? Signup" link */
+  .login-box .new-user-signup {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .login-box .new-user-signup p {
+    margin: 0;
+  }
+  
+  .login-box .new-user-signup a {
+    color: #008080;
+    text-decoration: none;
+  }
+  
+  .login-box .new-user-signup a:hover {
+    text-decoration: underline;
+  }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .login-box {
+        max-width: 100%;
+    }
+}
+
+.alert {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.alert.success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.alert.error {
+  background-color: #f44336;
+  color: white;
+}
+.password-input {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

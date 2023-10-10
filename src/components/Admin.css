@@ -1,0 +1,217 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.transparent-table {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    /* Set background color with 50% opacity */
+  
+    color: white;
+    /* Set text color to white */
+}
+
+.transparent-table th,
+.transparent-table td {
+    border: none !important;
+    /* Remove cell borders */
+}
+
+.transparent-table th {
+    background-color: #008080;
+    /* Header background color */
+    color: white;
+    /* Header text color */
+}
+
+.transparent-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Highlight row on hover */
+}
+
+.white-text {
+    color: white;
+    /* Sets the text color to white */
+}
+
+.user-data-heading {
+    font-size: 25px;
+    /* Adjust the font size  */
+    color: #008080;
+    /* Change the text color  */
+    background-color: #f0f0f0;
+    /* Add a background color */
+    padding: 10px 20px;
+    /* Add padding to create space around the heading */
+    border-radius: 10px;
+    /* Round the corners of the heading */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow effect */
+    display: inline-block;
+    /* Make it an inline-block element to center it */
+    animation: slideInLeft 0.5s ease-in-out, rotateOnHover 1s infinite ease-in-out;
+    cursor: pointer;
+
+}
+
+/* Slide-in from the left */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Rotate on hover */
+@keyframes rotateOnHover {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.user-data-heading:hover {
+    background-color: #008080;
+    /* Change the background color on hover */
+    color: white;
+    /* Change the text color on hover */
+    transition: background-color 0.3s, color 0.3s;
+    /* Add a smooth transition effect */
+}
+
+.navbar {
+    background-color: transparent;
+    /* Make the navbar transparent */
+    transition: background-color 0.3s;
+    /* Smooth transition on hover */
+    display: flex;
+    /* Use flexbox to center content horizontally */
+    justify-content: center;
+}
+
+.navbar-brand {
+    font-family: 'Arial', sans-serif;
+    /* Change the font family */
+    font-size: 24px;
+    /* Change the font size */
+    font-weight: bold;
+    color: #008080;
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+    letter-spacing: 2px;
+    /* Add letter spacing */
+    margin-right: 20px;
+    /* Add right margin for spacing */
+    transition: transform 0.3s, color 0.3s;
+    /* Add animation transitions */
+}
+
+/* Add a hover effect */
+.navbar-brand:hover {
+    transform: scale(1.05);
+    /* Enlarge the text on hover */
+    color: #4787ff;
+    /* Change the text color on hover */
+}
+
+.transparent-table .btn-edit {
+    background-color: #28a745;
+    /* Green background color for Edit button */
+}
+
+.transparent-table .btn-edit:hover {
+    background-color: #1e7e34;
+    /* Darker green on hover */
+}
+
+.transparent-table .btn-delete {
+    background-color: #dc3545;
+    /* Red background color for Delete button */
+}
+
+.transparent-table .btn-delete:hover {
+    background-color: #c82333;
+    /* Darker red on hover */
+}
+
+.go-to-books-button {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.go-to-books-button:hover {
+    background-color: #005757;
+    /* Darker color on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow effect */
+}
+
+/* Fade-in animation */
+.logout-button {
+    background-color: #ff4500;
+    color: white;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s;
+}
+
+.logout-button:hover {
+    opacity: .85;
+    background-color: #1e7e34;
+    transform: scale(1.1);
+}
+
+/* Define the animation keyframes */
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg) scale(1) color(#000);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.2) color(#ff4500);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1) color(#000);
+    }
+}
+
+/*  animation to the .book-icon-animation class on hover */
+.book-icon-animation:hover .fa-book {
+    animation: rotateIcon 2s infinite;
+    /* Apply the animation to the .fa-book element */
+}
+
+/* Style the .fa-book element separately */
+.fa-book {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Customize the appearance of the icon */
+.book-icon-animation .fa-book {
+    font-size: 32px;
+    /* Adjust the size of the icon */
+    color: #000;
+    /* Default color of the icon */
+}

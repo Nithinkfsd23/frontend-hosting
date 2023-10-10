@@ -1,0 +1,273 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.transparent-table {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Set background color with 50% opacity */
+   
+    color: white; /* Set text color to white */
+}
+
+.transparent-table th,
+.transparent-table td {
+    border: none !important; /* Remove cell borders */
+}
+
+.transparent-table th {
+    background-color: #008080; /* Header background color */
+    color: white; /* Header text color */
+}
+
+.transparent-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Highlight row on hover */
+}
+.white-text {
+    color: white;
+    /* Sets the text color to white */
+}
+
+
+.navbar {
+    background-color: transparent; /* Make the navbar transparent */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    display: flex; /* Use flexbox to center content horizontally */
+    justify-content: center;}
+
+.navbar-brand {
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    font-size: 24px; /* Change the font size */
+    font-weight: bold;
+    color: #008080;
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing */
+    margin-right: 20px; /* Add right margin for spacing */
+    transition: transform 0.3s, color 0.3s; /* Add animation transitions */
+    }
+
+/* Add a hover effect */
+.navbar-brand:hover {
+    transform: scale(1.05);
+    /* Enlarge the text on hover */
+    color: #4787ff;
+    /* Change the text color on hover */
+}
+
+.transparent-table .btn-edit {
+    background-color: #28a745; /* Green background color for Edit button */
+}
+
+.transparent-table .btn-edit:hover {
+    background-color: #1e7e34; /* Darker green on hover */
+}
+
+.transparent-table .btn-delete {
+    background-color: #dc3545; /* Red background color for Delete button */
+}
+
+.transparent-table .btn-delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+
+/* Fade-in animation */
+.logout-button {
+    background-color: #ff4500;
+    color: white;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out,transform 0.3s;
+  }
+  
+  .logout-button:hover {
+    opacity: .85;
+    background-color:#1e7e34;
+    transform: scale(1.1);
+  }
+
+  /* Define the animation keyframes */
+@keyframes rotateIcon {
+    0% {
+      transform: rotate(0deg) scale(1) color(#000);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.2) color(#ff4500);
+    }
+    100% {
+      transform: rotate(360deg) scale(1) color(#000);
+    }
+  }
+  
+  /* Apply the animation to the icon on hover */
+  .book-icon-animation {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .book-icon-animation:hover {
+    animation: rotateIcon 2s infinite; /* Apply the animation */
+  }
+  
+
+  /* UserHome.css */
+.user-home-container {
+  background-image: url('../utils/images/userHome.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 100vh; /* Adjust the height  */
+  overflow: auto; /* Allow content to be scrolled over the background */
+}
+
+/* Define styles for custom buttons */
+.custom-button {
+  background-color: #008080;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-right: 10px; /* Add margin between buttons */
+  transition: transform 0.2s; /* Add a transform animation on hover */
+}
+
+.custom-button:hover {
+  transform: scale(1.1); /* Increase the size of the button on hover */
+}
+
+/* Define styles for custom links */
+.custom-link {
+  text-decoration: none; /* Remove underline from links */
+  margin-right: 10px; /* Add margin between links and buttons */
+}
+
+
+
+/* Style for the status label */
+.status-label {
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+}
+
+.available {
+  background-color: green;
+}
+
+.not-available {
+  background-color: red;
+}
+
+/* CSS animation for card-body */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(75px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY();
+  }
+}
+
+/* Apply the custom font to card-body, card-title, and card-text */
+.card-body {
+  font-family: 'Roboto', sans-serif; /*  custom font as a fallback */
+  text-align: left;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.card-title {
+  font-family: 'Roboto', sans-serif; /* Use the custom font as a fallback */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-family: 'Roboto', sans-serif; /* Use the custom font as a fallback */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Add hover effect and display "Click to View Book Data" message */
+.card-container:hover .card-body {
+  transform: scale(1.05); /* Scale the card slightly on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Style the "Click to View Book Data" message */
+.card-container::before {
+  content: 'Click to View Book Data';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  opacity: 0; /* Hide the message by default */
+  transition: opacity 0.3s;
+}
+
+/* Display the "Click to View Book Data" message on hover */
+.card-container:hover::before {
+  opacity: 1;
+}
+
+.expanded-card {
+  background-color: #fff;
+  border: 10px solid #ccc; /* Reduced border size */
+  padding: 10px; /* Reduced padding */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Reduced box shadow */
+  max-width: 500px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the card horizontally */
+}
+/* Style the title */
+.expanded-card-title {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* Apply bold font weight */
+  margin-bottom: 10px; /* Add some spacing between the title and details */
+  color: #333; /* Set the text color */
+}
+
+/* Style the details */
+.expanded-card-details {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #666; /* Set the text color */
+  line-height: 1.5; /* Set the line height for better readability */
+}
+
+/* Style the go-back button */
+.go-back-button {
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px; /* Add spacing above the button */
+}
+
+/* Adjust button size on smaller screens */
+@media (max-width: 768px) {
+  .go-back-button {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+.signup-button:hover{
+  transform: scale(1.1);
+}
+.login-button:hover{
+  transform: scale(1.1);
+}
