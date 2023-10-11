@@ -26,7 +26,7 @@
 
 
 .navbar {
-    background-color: transparent; /* Make the navbar transparent */
+   
     transition: background-color 0.3s; /* Smooth transition on hover */
     display: flex; /* Use flexbox to center content horizontally */
     justify-content: center;}

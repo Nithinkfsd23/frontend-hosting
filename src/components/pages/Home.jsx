@@ -63,7 +63,7 @@ const Home = () => {
         }}
       >
         {/* Navbar */}
-        <nav class="navbar navbar-expand-lg " style={{ backgroundColor: 'rgba(0, 0, 0, 0.75)' }}>
+        <nav class="navbar navbar-expand-lg " style={{ backgroundColor: 'rgba(255, 255, 255, 0.75)' }}>
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               BOOK STORE APP
@@ -76,10 +76,11 @@ const Home = () => {
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              style={{color:'white'}}
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon" ></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse"  id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
               </ul>

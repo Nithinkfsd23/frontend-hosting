@@ -124,7 +124,7 @@ const UserHome = () => {
 
 
           {/* navbar */}
-          <nav class="navbar navbar-expand-lg transparent-bg white-text">
+          <nav class="navbar navbar-expand-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.75)' }}>
             <div class="container-fluid">
               <a class="navbar-brand white-text" href="#">USER DASHBOARD</a>
 
